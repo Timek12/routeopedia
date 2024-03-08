@@ -1,8 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate, Navigate } from "react-router-dom";
 function Product() {
   const navigate = useNavigate();
+
+  const [gotoProduct, setGoToProduct] = useState(() => {
+    return false;
+  });
 
   return (
     <div>
@@ -14,11 +18,17 @@ function Product() {
       >
         Add Product{" "}
       </button>
-      <Link to = {"/product/details/5"}>
-      <button>
-        Navigate to Product Detail - 5
-      </button>
+      <Link to={"/product/details/5"}>
+        <button>Navigate to Product Detail - 5</button>
       </Link>
+      {gotoProduct && <Navigate to="/product/details/3" />}
+      <button
+        onClick={() => {
+          setGoToProduct({ gotoProduct: true });
+        }}
+      >
+        Navigate to product - 3 {useState}
+      </button>
     </div>
   );
 }
