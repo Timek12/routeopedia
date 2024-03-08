@@ -62,7 +62,7 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Product/Details">
+                    <Link className="dropdown-item" to="/Product/Details/3">
                       Product Detail
                     </Link>
                   </li>
