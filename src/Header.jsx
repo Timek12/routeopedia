@@ -47,19 +47,24 @@ function Header() {
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link className="dropdown-item" to="/Product">
+                      Product
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    <Link className="dropdown-item" to="/Product/List">
+                      Product List
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                    <Link className="dropdown-item" to="/Product/Create">
+                      Create Product
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/Product/Details">
+                      Product Detail
+                    </Link>
                   </li>
                 </ul>
               </li>
