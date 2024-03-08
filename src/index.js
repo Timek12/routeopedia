@@ -19,7 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/About" element={<About />}></Route>
-        <Route path="/NotFound" element={<NotFound />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
         <Route path="/CryptoDetail" element={<CryptoDetail />}></Route>
         <Route path="/Product">
           <Route path="" element={<Product />}></Route>
